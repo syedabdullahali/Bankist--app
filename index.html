@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankist app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-1">
+        <div class="Welcomebox" style="padding-left: 1%;">
+            <p class="Welcome Welcomebn">Log in to get started</p>
+            <p class="Welcome Welcome-user"></p>
+        </div>
+
+        <img src="online-bank-icon-512.webp">
+
+        <form class="Login">
+            <!--text input --->
+            <input type="text" placeholder="user" class="login__input login_input--user">
+            <!-----type password ---->
+
+            <input type="text" placeholder="PIN" maxlength="5" class="login_input iogin_input--pin">
+            <!--Button--->
+            <button class="login__btn">&rarr;</button>
+        </form>
+    </nav>
+
+    <main class="first">
+        <!-- BALANCE -->
+        <div class="balance">
+
+            <div>
+                <p class="balance_label">Current balance</p>
+                <p class="balance_data">
+                    As of <span class="date">05/03/2037</span>
+                </p>
+            </div>
+
+            <p class="balnce_value">0000€</p>
+
+        </div>
+        <!-- MOVEMENTS -->
+        <din class="movements">
+            <div class="movements__row">
+                <marquee behavior="scroll" direction="right">
+
+                    <div class="movement-content">
+                        <div class="movemnts_type movements_type--deposit">
+                            2 deposit </div>
+                        <div class="movements__date">3 days ago</div>
+                    </div>
+
+                </marquee>
+                <div class="movements__value">100€</div>
+            </div>
+            <div class="movements__row">
+                <marquee behavior="scroll" direction="left">
+
+                    <div class="movement-content">
+                        <div class="movemnts_type move2 movements_type--withdrawal">1 withdrawal</div>
+                        <div class="movements__date">24/01/2037</div>
+                    </div>
+                </marquee>
+                <div class="movements__value">-378€</div>
+            </div>
+
+        </din>
+
+
+        <!-- SUMMARY -->
+
+        <div class="summary">
+            <div class="p-content">
+                <p class="summary__label">IN</p>
+                <p class="summary__value summary_value--in"> 0000€</p>
+
+                <p class="summary__label">OUT</p>
+                <p class="summary__value summary_value--out"> 0000€</p>
+
+                <p class="summary__label">INTERE</p>
+                <p class="summary__value summary_value--interest">0000€</p>
+            </div>
+
+            <button class="btn--sort">&downarrow; SORT</button>
+
+
+        </div>
+        <div class="logout">
+            <p class="logout-timer">
+                yo will be logged out in
+                <span class="timer">05:00</span>
+            </p>
+        </div>
+
+
+        <!-------Operation:Tarnsfers-->
+
+        <div class="operation opration--transfer">
+            <h2>Transfer money</h2>
+            <form class="form form--transfer">
+                <input type="text" class="form__input form_input--to">
+                <input type="number" class="form__input form_input--amount">
+                <button class="form_btn form_btn--transfer">&rarr;</button><br>
+                <div id="label">
+
+                    <label class="form_label">Transfer to</label>
+                    <label class="form_label"> Amount</label>
+                </div>
+            </form>
+        </div>
+
+        <!-- OPERATION: LOAN -->
+
+        <div class="operation operation--loan">
+            <h2>Request loan</h2>
+            <form class="form form--loan">
+                <input type="number" class="form__input form__input--loan-amount" style="max-width: 20vw ;" />
+                <button class="form_btn form_btn--loan">&rarr;</button>
+                <div id="label">
+                    <label class="form_label    
+form_lable--loan" style="padding-left: 2%;">Amount</label>
+                    <div id="img">
+                        <img src="loan-money.png" alt="">
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+
+        <!-----OPERATION:CLOSE-->
+        <div class="operation operation--close">
+            <h2>Close account</h2>
+            <form class=" form form--close">
+                <input type="text" class="form__input form_input--user">
+                <input type="password" maxlength="6" class="form__input form_input--pin">
+                <button class="form_btn form_btn--close">&rarr;</button>
+                <div id="label">
+                    <label class="form__label">Confirm user</label>
+                    <label class="form__label">Confirm PIN</label>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
