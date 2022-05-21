@@ -81,6 +81,12 @@ const account4 = {
 const accounts = [account1, account2, account3, account4];
 
 // Html element Location
+const Login_Input_Username = document.querySelector(".login_input--user")
+const Login_Input_pin = document.querySelector(".iogin_input--pin")
+
+const input_close_user = document.querySelector(".form_input--user")
+const inpit_close_pin = document.querySelector(".form_input--pin")
+
 let ContainerMovement = document.querySelector(".movement-content")
 const currentbalance = document.querySelector(".balnce_value")
 
@@ -90,35 +96,24 @@ const summary_value_Interest = document.querySelector(".summary_value--interest"
 
 const Button_Login = document.querySelector(".login__btn")
 
-const Login_Input_Username = document.querySelector(".login_input--user")
-const Login_Input_pin = document.querySelector(".iogin_input--pin")
-
 const Welcome_message = document.querySelector(".Welcomebn")
 const Welcome_User = document.querySelector(".Welcome-user")
 
 const containerApp = document.querySelector(".first")
 const Nav = document.querySelector('.nav-1')
 
-
 const Button_Transfer = document.querySelector(".form_btn--transfer")
 const InputTransferTo = document.querySelector(".form_input--to")
 const InputAmount = document.querySelector(".form_input--amount")
 
-
 const button_close = document.querySelector(".form_btn--close")
-const input_close_user = document.querySelector(".form_input--user")
-const inpit_close_pin = document.querySelector(".form_input--pin")
-
 
 const button_loan = document.querySelector(".form_btn--loan")
 const Input_Request_loan = document.querySelector(".form__input--loan-amount")
 const Button_Short = document.querySelector(".btn--sort")
 
-
-
 const LabelBalance = document.querySelector(".balnce_value")
-const labeldate = document.querySelector(".balance_data")
-
+const labelDate = document.querySelector(".balance_data")
 
 const labelTimer = document.querySelector(".timer")
 
@@ -137,7 +132,6 @@ const forMovementsDate = (date, local) => {
     return `${ DayPassed } days ago`
   } else {
 
-
     return new Intl.DateTimeFormat(local).format(date)
 
   }
@@ -153,11 +147,11 @@ const formatCur = (Value, locale, currency) => {
   let api2 = new Intl.NumberFormat(locale, obj).format(Value);
 
   let newapi = api2.match(/[^0-9]/g).join('')
-                    .replace(/(,||.)/g, '')
-                    +api1.replace(/-/g, ',')
+    .replace(/(,||.)/g, '')
+    + api1.replace(/-/g, ',')
 
-            return newapi.replace(/(,||.)/g, "")
-                   .replace(/(-)/g, "")
+  return newapi.replace(/(,||.)/g, "")
+    .replace(/(-)/g, "")
 }
 
 
@@ -317,7 +311,7 @@ Button_Login.addEventListener("click", (e) => {
       weekday: "long"
     }
 
-    labeldate.textContent = new Intl.DateTimeFormat(
+    labelDate.textContent = new Intl.DateTimeFormat(
       currenTacount.locale, formatdate).format(date)
 
     //input Clear

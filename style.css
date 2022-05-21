@@ -478,177 +478,114 @@ label {
 
     }
 
-    .summary__label {
+    .summary__value, .summary__label {
         font-size: 150%;
-        margin-left: 10px;
     }
-    
-    .summary__value {
-        color: rgb(13, 211, 13);
-    
-        font-size: 150%;
-      
-    }
-  
-    
-
 }
-
-
-
-
 
 @media(max-width:850px) {
     .balance {
         grid-column: 1/3;
-
     }
-
     .movements {
         grid-area: 2/1/4/3;
     }
-
     .opration--transfer {
         grid-area: 4/1/5/3;
     }
-
     .first {
         grid-template-rows: 80px 200px repeat(4, 140px) 80px 40px;
-
     }
-
     .operation--loan {
         grid-area: 5/1/6/3;
         position: relative;
     }
-
     .operation--close {
         grid-area: 6/1/7/3;
     }
-
     .summary {
         grid-area: 7/1/8/3;
     }
-
     .form__input {
         height: 35px;
         width: 23vw;
     }
-
     #img {
         height: 25%;
         width: 25%;
         top: 35%;
         left: 70%;
     }
-
     .operation h2 {
         font-weight: 500;
         font-size: 1.2rem;
     }
-
     .movements__value {
         font-size: 1.2rem;
     }
-
     .balnce_value {
         font-size: 2.2rem;
     }
-    .summary__label {
-        font-size: 110%;
-       
-    }
-    
-    .summary__value {
-    
-        font-size: 110%;
-      
+    .summary__value,.summary__label {
+        font-size: 110%;       
     }
 }
 
 
 @media(max-width:750px) {
-
     .Login {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .Welcomebox {
         height: inherit;
         width: 180%;
     }
-
     .Login input[type="text"] {
         width: 25vw;
         margin: 1%;
     }
-
     .Login button {
         width: 20vw;
     }
-
     .first {
         width: 80vw;
-    }
-
-    
+    }    
 }
-
 
 @media(max-width:600px) {
     .first {
         width: 80vw;
     }
-    .summary__label {
+    .summary__value,.summary__label {
         font-size: 90%;
-    }
-    
-    .summary__value {
-    
-        font-size: 90%;
-      
-    }
+    }    
     .balnce_value {
         font-size: 1.7rem;
     }
 }
-
 @media(max-width:550px) {
-
     .first {
         width: 85vw;
         margin: 1% 0px;
     }
-
     .logout-timer {
         font-size: 90%;
     }
-
-   
-
 }
 
 @media(max-width:450px) {
-
     .Welcome {
         font-size: 80%;
     }
-
     .first {
         width: 98vw;
     }
-
     .form__input {
         width: 30vw;
     }
-
-    .summary__label {
-        font-size: 75%;
-    }
-
-    .summary__value {
+    .summary__value,.summary__label {
         font-size: 75%;
     }
 }
