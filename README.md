@@ -1,65 +1,72 @@
 # Bankist--app
-🏦 Bankist App
-Bankist is a fully functional front-end banking application built using vanilla JavaScript, HTML, and CSS. It mimics real-world banking operations such as money transfers, loan applications, and multi-currency support, providing an excellent learning experience in DOM manipulation, UI logic, and interactive JavaScript programming — without any libraries or frameworks.
+# 🏦 Bankist App
 
-🌟 Key Features
-🔐 Secure Login System
-Users can log in using a username and PIN. Once authenticated, they see their personal dashboard with transaction history and balance.
+**Bankist** is a fully functional front-end **banking application** built using **vanilla JavaScript**, **HTML**, and **CSS**. It simulates real-world banking operations such as **money transfers**, **loan applications**, and **multi-currency support**. This project focuses on mastering DOM manipulation, event handling, and interactive UI development without using any external libraries or frameworks.
 
-💸 Money Transfers (Withdrawals & Deposits)
-Users can withdraw and deposit money.
+---
 
-The account balance updates in real time.
+## 🌟 Key Features
 
-Every transaction is stored and displayed in the transaction history, along with the date and time of the operation.
+### 🔐 Secure Login System
+- Login with a predefined username and PIN
+- Personalized dashboard after login
 
-🏦 Loan Application
-Users can apply for bank loans.
+### 💸 Money Transfers (Withdrawals & Deposits)
+- Withdraw and deposit functionality
+- Real-time account balance update
+- Transaction history with date and time for each action
 
-Basic logic ensures that a user is eligible for a loan based on their current balance or past deposits.
+### 🏦 Loan Application
+- Apply for a loan with basic approval logic
+- Approved loan instantly added to account
+- Loan entries are shown in the transaction list
 
-If approved, the loan is added to the account and shown as a transaction.
+### 🌍 Multi-Currency & Localization
+- Currency formats like USD, EUR, etc.
+- Dates and amounts displayed based on user locale
 
-🌍 Multi-Currency & Localization
-The app supports currency conversion (e.g., EUR, USD).
+### 📅 Transaction History
+- Each transaction is recorded with proper formatting
+- Differentiates between deposits, withdrawals, and loans
 
-Dates and currency formats adjust according to the user's locale, providing a more realistic experience.
+### 🌗 Dark / Light Theme (Optional)
+- Toggle between light and dark modes for better accessibility
 
-📅 Transaction History
-All user actions (deposits, withdrawals, loans) are stored as movements.
+---
 
-Each transaction is timestamped and styled with conditional formatting (e.g., positive for deposits, negative for withdrawals).
+## 🧠 What I Learned
 
-🌗 Dark / Light Theme (Optional)
-The app can include a theme switcher for better accessibility and aesthetics.
+This project helped enhance my skills in:
 
-🧠 What I Learned
-Building this project helped solidify important front-end development skills, including:
+- DOM Manipulation and real-time UI updates
+- Event-driven programming with JavaScript
+- Working with arrays, objects, dates, and timers
+- Using `Intl` API for date/time and currency formatting
+- Writing clean, modular, and maintainable code
+- Building a responsive, modern UI with pure CSS
 
-DOM manipulation and UI rendering from scratch
+---
 
-Handling user input and validating data
+## 🛠️ Tech Stack
 
-Using event listeners, timers, and arrays/objects effectively
+| Technology | Role |
+|------------|------|
+| **HTML5**  | Page structure and semantic layout |
+| **CSS3**   | Styling and responsiveness |
+| **JavaScript (ES6+)** | App logic, DOM interaction, and interactivity |
 
-Working with dates, currency formatting, and internationalization APIs (Intl)
+---
 
-Creating a clean, responsive layout with pure CSS
+## 🚀 Getting Started
 
-Writing modular and maintainable JavaScript code
+To run the project locally:
 
-🛠️ Tech Stack
-Technology	Role
-HTML5	Structure and layout of the web pages
-CSS3	Styling, layout, responsive design
-JavaScript (ES6+)	Application logic, UI interactivity, data handling
-
-🚀 Getting Started
-bash
-Copy
-Edit
+```bash
 # Clone the repository
 git clone https://github.com/your-username/bankist-app.git
 
-# Open the HTML file directly in a browser
-index.html
+# Open the project folder
+cd bankist-app
+
+# Open the index.html file in your browser
+
