@@ -63,7 +63,7 @@ To run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/bankist-app.git
+(https://github.com/syedabdullahali/Bankist--app.git)
 
 # Open the project folder
 cd bankist-app
